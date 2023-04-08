@@ -10,7 +10,7 @@
 <br>
 <ul>
     <details>
-        <summary><a href="multiplesOf3and5.md">Multiples Of 3 and 5</a></summary>
+        <summary><a href="Readme/multiplesOf3and5.md">Multiples Of 3 and 5</a></summary>
         <br>
         <p>&ensp; &ensp; &ensp; This Function consist to sum all the multiples of 3 and 5 who are under a given number</p>
         <br>
