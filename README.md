@@ -12,28 +12,29 @@
         <p>&ensp; &ensp; &ensp; This Function consist to sum all the multiples of 3 and 5 who are under a given number</p>
         <h2> Usage </h2>
         <br>
-        ```go
-            package main
-
-            import (
-                "euler"
-                "fmt"
-            )
-
-            func main() {
-                fmt.Println(euler.MultiplesOf3and5(10))
-            }
-        ```
         <br>
         <h2>Expected</h2>
-
-        ```console
-            $ go run . | cat -e
-            23$
-            $
-        ```
     </details>
 </ul>
+
+```go
+    package main
+
+    import (
+        "euler"
+        "fmt"
+    )
+
+    func main() {
+        fmt.Println(euler.MultiplesOf3and5(10))
+    }
+```
+
+```console
+    $ go run . | cat -e
+    23$
+    $
+```
 
 
 
