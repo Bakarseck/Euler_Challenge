@@ -2,7 +2,7 @@
 
 <p align="center">
     <img src="logo/golang.png" width="100px"/>
-    <img src="logo/zone01.png" width="80px"/>
+    <img src="logo/zone01.png" width="100px"/>
 </p>
 
 <h2> Functions </h2>
