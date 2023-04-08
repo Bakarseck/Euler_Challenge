@@ -1,7 +1,7 @@
 <h1 align="center">Euler_Challenge</h1>
 
 <p align="center">
-    <img src="logo/golang.png" width="100px"/>
+    <img src="logo/golang.png" width="95px"/>
     <img src="logo/zone01.png" width="100px"/>
 </p>
 
