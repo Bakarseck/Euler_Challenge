@@ -10,7 +10,7 @@
 <br>
 <ul>
     <details>
-        <summary>Multiples Of 3 and 5</summary>
+        <summary><a href="multiplesOf3and5.md">Multiples Of 3 and 5</a></summary>
         <br>
         <p>&ensp; &ensp; &ensp; This Function consist to sum all the multiples of 3 and 5 who are under a given number</p>
         <br>
@@ -18,27 +18,6 @@
     </details>
 </ul>
 
-<h2> Usage of Multiples Of 3 and 5</h2>
-<hr>
-
-```go
-    package main
-
-    import (
-        "euler"
-        "fmt"
-    )
-
-    func main() {
-        fmt.Println(euler.MultiplesOf3and5(10))
-    }
-```
-
-```console
-    $ go run .
-    23
-    $
-```
 
 
 
