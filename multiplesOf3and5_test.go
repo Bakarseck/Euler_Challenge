@@ -41,9 +41,9 @@ func TestMultiplesOf3and5(t *testing.T) {
 	for i, test := range TestCases {
 		have := MultiplesOf3and5(test.input)
 		if test.want != have {
-			t.Errorf("Failed")
+			t.Errorf("\n\033[31m ❌Failed, input : %v\nwant : %v\nhave : %v \033[0m\n", test.input, test.want, have)
 		} else {
-			fmt.Printf("\033[32m Test Case %v Success \033[0m\n", i)
+			fmt.Printf("\033[32m ✅Test Case %v Success \033[0m\n", i)
 		}
 	}
 

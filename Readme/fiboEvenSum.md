@@ -9,12 +9,12 @@
     )
 
     func main() {
-        fmt.Println(euler.MultiplesOf3and5(10))
+        fmt.Println(euler.FibonacciSum(34))
     }
 ```
 
 ```bash
-    $ go run .
-    23
-    $
+   > $ go run .
+   > 44
+   > $
 ```
