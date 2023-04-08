@@ -7,32 +7,30 @@ import (
 
 type TestCase struct {
 	input int
-	want int
+	want  int
 }
 
-
-
-func TestMultiplesOf3and5(t *testing.T)  {
+func TestMultiplesOf3and5(t *testing.T) {
 	TestCases := []TestCase{
 		{
-			input : 10,
-			want : 23,
+			10,
+			23,
 		},
 		{
-			input : 49,
-			want : 543,
+			49,
+			543,
 		},
 		{
-			input : 1000,
-			want : 233168,
+			1000,
+			233168,
 		},
 		{
-			input : 8456,
-			want : 16687353,
+			8456,
+			16687353,
 		},
 		{
-			input : 19564,
-			want : 89301183,
+			19564,
+			89301183,
 		},
 	}
 
@@ -51,5 +49,4 @@ func TestMultiplesOf3and5(t *testing.T)  {
 
 	fmt.Println()
 
-	
 }
