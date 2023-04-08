@@ -1,5 +1,4 @@
-<h2 style="padding-left: 60px"> Usage of Multiples Of 3 and 5</h2>
-<hr>
+<h2 style="padding-left: 60px"> Usage : </h2>
 
 ```go
     package main
