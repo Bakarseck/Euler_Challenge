@@ -1,6 +1,9 @@
 <h1 align="center">Euler_Challenge</h1>
 
-<p align="center"><img src="logo/golang.png" width="50px"/></p>
+<p align="center">
+    <img src="logo/golang.png" width="100px"/>
+    <img src="logo/zone01.png" width="80px"/>
+</p>
 
 <h2> Functions </h2>
 
@@ -10,12 +13,13 @@
         <summary>Multiples Of 3 and 5</summary>
         <br>
         <p>&ensp; &ensp; &ensp; This Function consist to sum all the multiples of 3 and 5 who are under a given number</p>
-        <h2> Usage </h2>
         <br>
         <br>
-        <h2>Expected</h2>
     </details>
 </ul>
+
+<h2> Usage of Multiples Of 3 and 5</h2>
+<hr>
 
 ```go
     package main
@@ -31,8 +35,8 @@
 ```
 
 ```console
-    $ go run . | cat -e
-    23$
+    $ go run .
+    23
     $
 ```
 
