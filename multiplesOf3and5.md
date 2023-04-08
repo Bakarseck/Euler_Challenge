@@ -14,7 +14,7 @@
     }
 ```
 
-```console
+```bash
     $ go run .
     23
     $

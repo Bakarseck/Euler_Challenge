@@ -18,6 +18,14 @@
     </details>
 </ul>
 
+<h2> Installation </h2>
+
+```console
+    git clone https://github.com/Bakarseck/Euler_Challenge.git
+    cd Euler_Challenge
+    code .
+```
+
 
 
 
