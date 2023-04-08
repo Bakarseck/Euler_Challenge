@@ -1,16 +1,18 @@
 package euler
 
-import(
+import (
+	"fmt"
 	"testing"
 )
+
+type TestCase struct {
+	input int
+	want int
+}
 
 
 
 func TestMultiplesOf3and5(t *testing.T)  {
-	type TestCase struct {
-		input int
-		want int
-	}
 	TestCases := []TestCase{
 		{
 			input : 10,
@@ -34,12 +36,20 @@ func TestMultiplesOf3and5(t *testing.T)  {
 		},
 	}
 
-	for _, test := range TestCases {
+	fmt.Println()
+	fmt.Printf("Testing Multiples 3 and 5...\n")
+	fmt.Println()
+
+	for i, test := range TestCases {
 		have := MultiplesOf3and5(test.input)
 		if test.want != have {
 			t.Errorf("Failed")
+		} else {
+			fmt.Printf("\033[32m Test Case %v Success \033[0m\n", i)
 		}
 	}
+
+	fmt.Println()
 
 	
 }
