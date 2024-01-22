@@ -15,6 +15,7 @@ type Server struct {
 var (
 	ENDPOINTS = []models.EndPoint{
 		{Path: "/", Handler: handlers.Home, Method: http.MethodGet},
+		{Path: "/login", Handler: handlers.Login, Method: http.MethodPost},
 	}
 )
 
