@@ -3,6 +3,7 @@ package server
 import (
 	"fmt"
 	"net/http"
+	"sessions/internals/handlers"
 	"sessions/internals/models"
 	"sessions/internals/utils"
 )
@@ -12,7 +13,9 @@ type Server struct {
 }
 
 var (
-	ENDPOINTS = []models.EndPoint{}
+	ENDPOINTS = []models.EndPoint{
+		{Path: "/", Handler: handlers.Home, Method: http.MethodGet},
+	}
 )
 
 func NewServer() Server {
@@ -60,8 +63,5 @@ func (s *Server) StartServer(port string) error {
 	fmt.Printf("http://localhost:%v", port)
 	fmt.Println()
 
-	certFile := "/key/cert.pem"
-    keyFile := "/key/key.pem"
-
-	return http.ListenAndServeTLS(":"+port, certFile, keyFile, s.Router)
+	return http.ListenAndServe(":"+port, s.Router)
 }
