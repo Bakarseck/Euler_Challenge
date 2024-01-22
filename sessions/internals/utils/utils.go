@@ -8,22 +8,24 @@ import (
 	"os"
 	"sessions/internals/models"
 	"strings"
+	"text/template"
 
+	"gorm.io/driver/sqlite"
 	"gorm.io/gorm"
 )
 
-func CreateUser(db *gorm.DB, username, firstName, lastName, email, password string) error {
+// func CreateUser(db *gorm.DB, username, firstName, lastName, email, password string) error {
 
-	user := models.User{
-		Username:  username,
-		FirstName: firstName,
-		LastName:  lastName,
-		Email:     email,
-		Password:  password,
-	}
+// 	user := models.User{
+// 		Username:  username,
+// 		FirstName: firstName,
+// 		LastName:  lastName,
+// 		Email:     email,
+// 		Password:  password,
+// 	}
 
-	return db.Create(&user).Error
-}
+// 	return db.Create(&user).Error
+// }
 
 func RespondWithJSON(w http.ResponseWriter, data interface{}, statusCode int) {
 	jsonData, err := json.Marshal(data)
@@ -61,4 +63,25 @@ func LoadEnv(path string) error {
 		}
 	}
 	return scanner.Err()
+}
+
+func ConnectDatabase() *gorm.DB {
+	db, err := gorm.Open(sqlite.Open("sessions.db"), &gorm.Config{})
+	if err != nil {
+		panic("Failed to connect to database!")
+	}
+
+	db.AutoMigrate(&models.User{})
+
+	return db
+}
+
+func RenderPage(pagePath string, data interface{}, w http.ResponseWriter) {
+	files := []string{"templates/base.html", "templates/" + pagePath + ".html"}
+	tpl, err := template.ParseFiles(files...)
+	if err != nil {
+		log.Println("🚨 " + err.Error())
+	} else {
+		tpl.Execute(w, data)
+	}
 }
