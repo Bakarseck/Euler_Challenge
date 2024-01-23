@@ -3,6 +3,7 @@ module sessions
 go 1.21.4
 
 require (
+	github.com/google/uuid v1.5.0
 	golang.org/x/crypto v0.18.0
 	gorm.io/driver/sqlite v1.5.4
 	gorm.io/gorm v1.25.5

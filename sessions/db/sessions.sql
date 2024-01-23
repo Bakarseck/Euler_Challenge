@@ -6,3 +6,10 @@ CREATE TABLE IF NOT EXISTS User (
     email TEXT NOT NULL UNIQUE,
     password TEXT NOT NULL
 );
+
+CREATE TABLE IF NOT EXISTS Sessions (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    token TEXT NOT NULL UNIQUE,
+    username TEXT NOT NULL,
+    FOREIGN KEY(username) REFERENCES User(username)
+);

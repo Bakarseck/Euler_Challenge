@@ -14,19 +14,6 @@ import (
 	"gorm.io/gorm"
 )
 
-// func CreateUser(db *gorm.DB, username, firstName, lastName, email, password string) error {
-
-// 	user := models.User{
-// 		Username:  username,
-// 		FirstName: firstName,
-// 		LastName:  lastName,
-// 		Email:     email,
-// 		Password:  password,
-// 	}
-
-// 	return db.Create(&user).Error
-// }
-
 func RespondWithJSON(w http.ResponseWriter, data interface{}, statusCode int) {
 	jsonData, err := json.Marshal(data)
 	if err != nil {
@@ -34,7 +21,6 @@ func RespondWithJSON(w http.ResponseWriter, data interface{}, statusCode int) {
 		return
 	}
 
-	// w.WriteHeader(statusCode)
 	w.Header().Set("Content-Type", "application/json")
 	w.Header().Set("Access-Control-Allow-Origin", "*")
 	w.Header().Set("Access-Control-Allow-Methods", "GET, POST")

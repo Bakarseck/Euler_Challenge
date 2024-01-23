@@ -1,5 +1,5 @@
-github.com/Bakarseck/api v0.0.0-20230830212349-976cad10b643 h1:dNd30zAIeOMuSs2d+cDOccyKnw38s7jSpoxg3Oe1Oic=
-github.com/Bakarseck/api v0.0.0-20230830212349-976cad10b643/go.mod h1:irOWUodZUvlKGFuDZJdadMojJkXAgwGrpyvsFEVDeUg=
+github.com/google/uuid v1.5.0 h1:1p67kYwdtXjb0gL0BPiP1Av9wiZPo5A8z2cWkTZ+eyU=
+github.com/google/uuid v1.5.0/go.mod h1:TIyPZe4MgqvfeYDBFedMoGGpEw/LqOeaOT+nhxU+yHo=
 github.com/jinzhu/inflection v1.0.0 h1:K317FqzuhWc8YvSVlFMCCUb36O/S9MCKRDI7QkRKD/E=
 github.com/jinzhu/inflection v1.0.0/go.mod h1:h+uFLlag+Qp1Va5pdKtLDYj+kHp5pxUVkryuEj+Srlc=
 github.com/jinzhu/now v1.1.5 h1:/o9tlHleP7gOFmsnYNz3RGnqzefHA47wQpKrrdTIwXQ=
